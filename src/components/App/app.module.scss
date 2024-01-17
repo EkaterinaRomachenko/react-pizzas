@@ -1,0 +1,19 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // background-color:#1f1f1f;
+  max-width: 1450px;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+  color: #e3e3e3;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  z-index: 0;
+}

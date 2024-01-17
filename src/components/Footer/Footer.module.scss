@@ -1,0 +1,142 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #265847;
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (max-width: 899px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 599px) {
+    text-align: center;
+  }
+
+  &__container {
+    width: 1170px;
+    margin: 0px auto;
+
+    @media screen and (max-width: 1199px) {
+      width: calc(100vw - 100px);
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (max-width: 990px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 599px) {
+      flex-direction: column;
+    }
+  }
+
+  &__outStory {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__workHous {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__linkWatch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.1;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.15s ease-in-out;
+      color: #5eaa90ed;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+    gap: 20px;
+
+    @media screen and (max-width: 899px) {
+      padding-top: 0px;
+      width: 100%;
+      & > * {
+        width: 270px;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__info {
+    width: 170px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.1;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__infoLink {
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.1;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #e3e3e3;
+
+    &:hover {
+      transition: all 0.15s ease-in-out;
+      color: #5eaa90ed;
+    }
+  }
+}

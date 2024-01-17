@@ -1,0 +1,91 @@
+.pizza {
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+  border-radius: 20px;
+
+  @media screen and (max-width: 340px) {
+    max-width: 260px;
+  }
+  &__wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    white-space: nowrap;
+
+    @media screen and (max-width: 380px) {
+      font-size: 18px;
+    }
+  }
+
+  &__selector {
+    display: flex;
+    background-color: #265847;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px;
+
+    ul {
+      display: flex;
+      flex: 1;
+
+      &:first-of-type {
+        margin-bottom: 6px;
+      }
+
+      li {
+        padding: 8px;
+        flex: 1;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+  }
+  .icon {
+    path {
+      fill: #e3e3e3;
+    }
+  }
+
+  p {
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #e3e3e3;
+    color: #383838;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 22px;
+    position: relative;
+    top: -1px;
+    left: 3px;
+  }
+}

@@ -1,0 +1,49 @@
+.baner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url('../../images/background.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  &__title {
+    margin-left: 50px;
+    max-width: 650px;
+    font-size: 100px;
+    position: absolute;
+    bottom: 80px;
+    z-index: 2;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #35353b;
+
+    @media screen and (max-width: 1020px) {
+      font-size: 60px;
+      max-width: 300px;
+      bottom: 25px;
+      margin-left: 25px;
+    }
+
+    @media screen and (max-width: 430px) {
+      font-size: 40px;
+      max-width: 250px;
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    background-image: url('../../images//background-small.jpg');
+    max-height: 600px;
+  }
+
+  @media screen and (max-width: 760px) {
+    background-image: url('../../images//background-small.jpg');
+    background-position: center;
+    max-height: 600px;
+  }
+
+  @media screen and (max-width: 430px) {
+    background-position: right;
+  }
+}

@@ -1,0 +1,176 @@
+.skills {
+  position: relative;
+  background-image: url('../../images/background-skills.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 500px;
+  width: 100%;
+
+  &__title {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #1f1f1f;
+    font-weight: 600;
+    margin: 60px 0;
+
+    @media screen and (max-width: 680px) {
+      font-size: 30px;
+      margin: 30px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}
+
+.skill {
+  padding: 25px 30px;
+  max-width: 600px;
+  width: 100%;
+
+  @media screen and (max-width: 680px) {
+    padding: 0;
+    width: calc(100vw - 50px);
+    margin: 0 auto;
+  }
+
+  &__bar {
+    margin: 20px 0;
+
+    &:last-child {
+      margin-top: 0px;
+    }
+  }
+  &__info {
+    margin-bottom: 5px;
+
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      color: #1f1f1f;
+      font-size: 17px;
+      opacity: 0;
+      animation: showText 0.5s 1s linear forwards;
+    }
+  }
+
+  &__progress {
+    height: 10px;
+    width: 100%;
+    background: #9dbc9c;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+    span {
+      height: 100%;
+      position: absolute;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: #265847;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+
+    span::before {
+      position: absolute;
+      content: '';
+      top: -10px;
+      right: 0;
+      height: 0;
+      width: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-color: #000;
+      opacity: 0;
+      animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    span::after {
+      position: absolute;
+      content: '';
+      top: -28px;
+      right: 0;
+      font-weight: 500;
+      font-family: 'Raleway', sans-serif;
+      background: #dbeddb;
+      color: #1f1f1f;
+      padding: 1px 8px;
+      font-size: 12px;
+      border-radius: 3px;
+      opacity: 0;
+      animation: showText2 0.5s 1.5s linear forwards;
+    }
+
+    &.one span {
+      width: 98%;
+    }
+    &.two span {
+      width: 60%;
+    }
+    &.three span {
+      width: 85%;
+    }
+    &.four span {
+      width: 90%;
+    }
+    &.five span {
+      width: 82%;
+    }
+    &.six span {
+      width: 75%;
+    }
+
+    &.one span::after {
+      content: '98%';
+    }
+    &.two span::after {
+      content: '60%';
+    }
+    &.three span::after {
+      content: '85%';
+    }
+    &.four span::after {
+      content: '90%';
+    }
+
+    &.five span::after {
+      content: '82%';
+    }
+
+    &.six span::after {
+      content: '75%';
+    }
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
