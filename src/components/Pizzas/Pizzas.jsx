@@ -71,10 +71,10 @@ function PizzaBlock({ imageUrl, title, price, sizes, types }) {
 
 // проверяем на типы
 PizzaBlock.propTypes ={
-  sizes: PropTypes.object,
+  sizes: PropTypes.array,
   price: PropTypes.number,
   title: PropTypes.string,
-  types: PropTypes.object,
+  types: PropTypes.array,
   imageUrl: PropTypes.string
 }
 

@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  background-color: #265847;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -52,8 +53,8 @@
   &__link {
     font-size: 30px;
     font-weight: 600;
-    color: #35353b;
     position: relative;
+    color: #e3e3e3;
 
     &:after {
       content: '';
@@ -75,7 +76,7 @@
       left: 0;
       bottom: -3px;
       height: 2px;
-      background-color: #265847;
+      background-color: #5eaa90ed;
       transition: width 0.5s;
     }
 
